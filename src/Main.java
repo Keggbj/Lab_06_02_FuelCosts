@@ -16,18 +16,28 @@ public class Main {
 
 
             System.out.print("Enter the gas mileage per hour: ");
-            if (in.hasNextInt()) ;
+            if (in.hasNextInt())
         {
             mph = in.nextInt();
             in.nextLine();
         }
-
+            else
+        {
+            trash = in.nextLine();
+            System.out.println(trash + " is not a number!");
+        }
             System.out.print("Enter the gallons of gas in the car: ");
-            if (in.hasNextInt()) ;
+            if (in.hasNextInt())
         {
             gallons = in.nextInt();
             in.nextLine();
         }
+            else
+        {
+            trash = in.nextLine();
+            System.out.println(trash + " is not a number!");
+        }
+
         {
             System.out.print("Enter the cost per gallon: ");
             if (in.hasNextDouble()) {
